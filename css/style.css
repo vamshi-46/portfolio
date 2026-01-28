@@ -250,3 +250,61 @@ transform:translateY(0)
 .center{
 margin-top:10px
 }
+/* Floating Background Shapes */
+.floating-shape{
+position:absolute;
+border-radius:50%;
+background:rgba(56,189,248,0.15);
+animation:float 6s ease-in-out infinite
+}
+
+.shape1{
+width:120px;
+height:120px;
+top:20%;
+left:10%;
+animation-delay:0s
+}
+
+.shape2{
+width:80px;
+height:80px;
+bottom:15%;
+right:15%;
+animation-delay:2s
+}
+
+.shape3{
+width:60px;
+height:60px;
+top:50%;
+right:30%;
+animation-delay:4s
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-25px)}
+}
+
+/* Scroll Animation */
+.scroll-animate{
+opacity:0;
+transform:translateY(40px);
+transition:1s
+}
+
+.scroll-animate.active{
+opacity:1;
+transform:translateY(0)
+}
+
+/* Button micro interaction */
+.btn{
+transition:0.3s ease
+}
+
+.btn:hover{
+transform:scale(1.08)
+}
+
